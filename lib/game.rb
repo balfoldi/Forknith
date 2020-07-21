@@ -44,26 +44,25 @@ class Game #creating Game class
 
   def menu_choice #defining menu_choice method
     user_input = gets.chomp #asking for user input
-    if user_input == "a" #defining as a condition that user_input equals ''
-      @human_player.search_weapon #executing search_weapon method on @human_player
-    elsif user_input == "s"
-      @human_player.search_health_pack
-      #sleep(2)
-    elsif user_input.to_i < @@enemies.length
-      target = @@enemies[user_input.to_i]
-      @human_player.attacks(target)
-      kill_player(target) if target.life_points <= 0
-    else
-      puts "FATAL ERROR! Tape un caractère proposé dans le menu."
-      menu_choice
-    end
-  end
+    if user_input == "a" #defining as a condition that user_input equals 'a'
+      @human_player.search_weapon # for executing search_weapon method on @human_player
+    elsif user_input == "s" #defining as a condition that user_input equals 's'
+      @human_player.search_health_pack #for executing search_health_pack method on @human_player
+    elsif user_input.to_i < @@enemies.length #defining as a condition that user_input is inferior to the numeber of enemies
+      target = @@enemies[user_input.to_i] #for targeting the enemy with user_input as an index for attack
+      @human_player.attacks(target) #and attacking them
+      kill_player(target) if target.life_points <= 0 #and killing them -withdrawing them from the @@enemies array-
+    else #defining an else behavior
+      puts "FATAL ERROR! Tape un caractère proposé dans le menu." #displaying an error message
+      menu_choice #relaunching menu_choice method
+    end #closing the if.elsif.else
+  end #closing the method
 
-  def enemies_attacks
-    @@enemies.each { |enemy| enemy.attacks(@human_player) }
-  end
+  def enemies_attacks #defining enemies_attack method
+    @@enemies.each { |enemy| enemy.attacks(@human_player) } #making all enemies alive attack @human_player
+  end #closing the method
 
-  def end
-    @human_player.life_points > 0 ? (puts "Y E E T ! tu as gagné gg wp!") : (puts "S H A M E")
-  end
-end
+  def end #defining end method
+    @human_player.life_points > 0 ? (puts "Y E E T ! tu as gagné gg wp!") : (puts "S H A M E") #displaying victory or 'game over' message
+  end #closing the method
+end #closing class
