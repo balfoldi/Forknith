@@ -1,4 +1,9 @@
 Welcome to the new AAA game from "Pas'Tèk" indie studio "ILS VEULENT TOUS MA POO"
+
+[alt text](D9MrrrdWwAAfw3f.png)
+
+
+
 IVTMP come with a revolutionary concept of battle royal that will change the gaming industry for the coming years.
 
 In the root folder you will find 3 apps containing one version of this amazing game each :
@@ -7,3 +12,5 @@ In the root folder you will find 3 apps containing one version of this amazing g
 "app_3.rb" is version 3.0 : this version is the master piece of modern gaming industry. Following an intricated net of ruby classes, instances of class and other new concepts of modern programming. As our dictatore always say: "I am from mars boy".
 
 Thank you for reading and all the Pas'tèk team wish you the best entertainment with our new baby.
+
+
