@@ -1,6 +1,6 @@
 Welcome to the new AAA game from "Pas'Tèk" indie studio "ILS VEULENT TOUS MA POO"
 
-[alt text](D9MrrrdWwAAfw3f.png)
+![picture](D9MrrrdWwAAfw3f.png)
 
 
 
